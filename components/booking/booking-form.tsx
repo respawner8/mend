@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { Avatar } from "@/components/avatar";
 import { Button } from "@/components/ui/button";
@@ -80,7 +81,7 @@ export function BookingForm({
             </ul>
           </div>
           <div className="mt-6">
-            <Button render={<a href="/" />} variant="outline">Back to home</Button>
+            <Button render={<Link href="/" />} variant="outline">Back to home</Button>
           </div>
         </div>
       ) : (
