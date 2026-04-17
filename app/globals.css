@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-bg:            #f3f4ef;
+  --color-surface:       #ffffff;
+  --color-surface-2:     #f8f7f2;
+  --color-border:        #d6d3cc;
+  --color-ink:           #1f2937;
+  --color-text:          #1f2937;
+  --color-text-muted:    #4b5563;
+  --color-text-subtle:   #9ca3af;
+  --color-sage:          #5b8767;
+  --color-sage-deep:     #3f6b4c;
+  --color-sage-soft:     #c7d2c3;
+
+  --font-sans:    "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.011em;
+}
+
+.display {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  line-height: 1.02;
+  font-weight: 500;
+}
+
+.display-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-sage);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+::selection {
+  background: rgba(91, 135, 103, 0.35);
+  color: var(--color-ink);
 }
