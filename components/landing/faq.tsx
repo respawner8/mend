@@ -23,7 +23,7 @@ const faq = [
 export function Faq() {
   return (
     <section id="faq" className="mx-auto max-w-3xl px-4 py-20">
-      <p className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">FAQ</p>
+      <p className="mono mb-2 text-sm font-semibold uppercase tracking-[0.12em] text-[var(--color-sage)]">FAQ</p>
       <h2 className="display text-3xl text-[var(--color-ink)] md:text-4xl mb-8">Questions we hear most.</h2>
       <Accordion className="w-full">
         {faq.map((item, i) => (

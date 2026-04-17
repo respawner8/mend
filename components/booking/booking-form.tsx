@@ -73,7 +73,7 @@ export function BookingForm({
             A confirmation is on its way to {email}. {therapist.firstName} will reach out before your session with the session link or address.
           </p>
           <div className="mx-auto mt-6 max-w-sm rounded-xl border border-[var(--color-border)] bg-[var(--color-bg)] p-4 text-left text-sm">
-            <div className="mono mb-1 text-[11px] uppercase tracking-[0.12em] text-[var(--color-sage)]">What to expect</div>
+            <div className="mono mb-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--color-sage)]">What to expect</div>
             <ul className="mt-2 space-y-1.5 text-[var(--color-ink)]/90">
               <li>• First session is typically 50 minutes, getting to know each other.</li>
               <li>• You can reschedule up to 24 hours ahead.</li>

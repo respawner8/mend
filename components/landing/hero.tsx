@@ -10,7 +10,7 @@ export function Hero() {
         style={{ background: "var(--color-sage-soft)", opacity: 0.55, filter: "blur(8px)" }}
       />
       <div className="relative mx-auto max-w-5xl">
-        <div className="mono mb-5 text-[11px] uppercase tracking-[0.08em] text-[var(--color-sage)]">
+        <div className="mono mb-5 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--color-sage)]">
           LICENSED THERAPISTS · ALL 50 STATES
         </div>
         <h1 className="display text-5xl text-[var(--color-ink)] md:text-7xl lg:text-[78px]">
