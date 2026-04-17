@@ -6,7 +6,7 @@ export function FeaturedStrip() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-20">
       <div className="mb-10 max-w-2xl">
-        <p className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">A peek inside</p>
+        <p className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">A peek inside</p>
         <h2 className="display text-3xl text-[var(--color-ink)] md:text-4xl">Real, licensed, and ready.</h2>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">

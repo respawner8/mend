@@ -21,12 +21,12 @@ export function ProfileHeader({ therapist }: { therapist: Therapist }) {
         <p className="text-[var(--color-ink)]/90 leading-relaxed">{therapist.bio}</p>
 
         <div>
-          <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">My approach</div>
+          <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">My approach</div>
           <p className="text-[var(--color-ink)]/90 leading-relaxed">{therapist.approach}</p>
         </div>
 
         <div>
-          <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">Focus areas</div>
+          <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">Focus areas</div>
           <div className="flex flex-wrap gap-1.5">
             {therapist.specialties.map(s => (
               <span key={s} className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-2)] px-3 py-1 text-xs text-[var(--color-ink)]">
@@ -38,13 +38,13 @@ export function ProfileHeader({ therapist }: { therapist: Therapist }) {
 
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
-            <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">Session modes</div>
+            <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">Session modes</div>
             <div className="text-sm text-[var(--color-ink)]/90">
               {therapist.modes.map(m => modeLabels[m]).join(" · ")}
             </div>
           </div>
           <div>
-            <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">Insurance</div>
+            <div className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">Insurance</div>
             <div className="text-sm text-[var(--color-ink)]/90">
               {therapist.insurances.map(i => insuranceLabels[i]).join(", ")}
               {therapist.price && <> · ${therapist.price} self-pay</>}

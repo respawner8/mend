@@ -25,7 +25,7 @@ export default async function MatchesPage({
       <SiteHeader />
       <main className="mx-auto max-w-5xl px-4 py-10">
         <div className="mb-2">
-          <p className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">Your matches</p>
+          <p className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">Your matches</p>
           <h1 className="display text-4xl text-[var(--color-ink)]">Three therapists for you.</h1>
         </div>
         <div className="mt-4">

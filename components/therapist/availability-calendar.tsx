@@ -42,7 +42,7 @@ export function AvailabilityCalendar({
 
   return (
     <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5">
-      <div className="mono mb-4 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">Availability</div>
+      <div className="mono mb-4 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">Availability</div>
       <div className="space-y-4">
         {byDay.map(([day, times]) => (
           <div key={day}>

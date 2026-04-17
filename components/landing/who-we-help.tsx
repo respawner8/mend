@@ -9,7 +9,7 @@ export function WhoWeHelp() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-20">
       <div className="mb-10 max-w-2xl">
-        <p className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-text-subtle)]">Who Mend is for</p>
+        <p className="mono mb-2 text-xs uppercase tracking-[0.12em] text-[var(--color-sage)]">Who Mend is for</p>
         <h2 className="display text-3xl text-[var(--color-ink)] md:text-4xl">Designed around the things people actually come in for.</h2>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
